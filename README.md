@@ -58,11 +58,6 @@
 RenderMD-frontend/
 ├── public/             # Static assets
 ├── src/
-│   ├── components/     # React components
-│   ├── hooks/         # Custom React hooks
-│   ├── services/      # API services
-│   ├── styles/        # CSS/SCSS files
-│   ├── utils/         # Utility functions
 │   ├── App.jsx        # Main App component
 │   └── main.jsx       # Entry point
 ├── .github/           # GitHub workflows and templates
@@ -79,16 +74,6 @@ npm run dev          # Start development server with HMR
 npm run build        # Build for production
 npm run preview      # Preview production build locally
 
-# Code Quality
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix ESLint issues
-npm run format       # Format code with Prettier
-npm run format:check # Check code formatting
-
-# Testing
-npm test            # Run tests
-npm run test:watch  # Run tests in watch mode
-npm run test:coverage # Generate test coverage report
 ```
 
 ## 🔧 Configuration
@@ -188,17 +173,6 @@ const DiagramComponent = ({ content, type, onUpdate }) => {
 };
 ```
 
-### Architecture
-
-```mermaid
-graph TD
-    A[User Input] --> B[Editor Component]
-    B --> C[API Service]
-    C --> D[Backend API]
-    D --> E[Processed Data]
-    E --> F[Preview Component]
-    F --> G[Rendered Diagram]
-```
 
 ## 🤝 Contributing
 
@@ -222,29 +196,6 @@ We welcome contributions from the community! Here's how you can help:
 5. **Code Review**: All PRs require review before merging
 
 Please read our [Contributing Guidelines](CONTRIBUTING.md) for detailed information.
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-npm test
-
-# Run tests in watch mode
-npm run test:watch
-
-# Generate coverage report
-npm run test:coverage
-
-# Run specific test file
-npm test -- --testPathPattern=component.test.jsx
-```
-
-### Testing Strategy
-
-- **Unit Tests**: Individual component testing
-- **Integration Tests**: Component interaction testing
-- **E2E Tests**: Full application workflow testing
-- **Visual Regression**: UI consistency testing
 
 ## 🎯 Performance
 

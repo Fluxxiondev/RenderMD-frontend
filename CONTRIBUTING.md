@@ -120,20 +120,6 @@ npm run dev          # Start development server with HMR
 npm run build        # Build for production
 npm run preview      # Preview production build locally
 
-# Code Quality
-npm run lint         # Check code style
-npm run lint:fix     # Fix code style issues
-npm run format       # Format code with Prettier
-npm run format:check # Check if code is formatted
-
-# Testing
-npm test            # Run tests
-npm run test:watch  # Run tests in watch mode
-npm run test:coverage # Generate coverage report
-
-# Analysis
-npm run analyze     # Analyze bundle size
-npm run type-check  # TypeScript type checking (if applicable)
 ```
 
 ### 📁 Project Structure
@@ -141,31 +127,13 @@ npm run type-check  # TypeScript type checking (if applicable)
 ```
 RenderMD-frontend/
 ├── public/             # Static assets
-│   ├── icons/         # App icons and favicon
-│   └── images/        # Static images
 ├── src/
-│   ├── components/     # React components
-│   │   ├── common/    # Reusable components
-│   │   ├── layout/    # Layout components
-│   │   └── features/  # Feature-specific components
-│   ├── hooks/         # Custom React hooks
-│   ├── services/      # API services and utilities
-│   ├── styles/        # CSS/SCSS files
-│   │   ├── components/ # Component-specific styles
-│   │   ├── globals/   # Global styles
-│   │   └── themes/    # Theme definitions
-│   ├── utils/         # Utility functions
-│   ├── constants/     # App constants
-│   ├── types/         # TypeScript type definitions
 │   ├── App.jsx        # Main App component
 │   └── main.jsx       # Entry point
-├── tests/             # Test files
-│   ├── __mocks__/     # Test mocks
-│   ├── utils/         # Test utilities
-│   └── fixtures/      # Test data
 ├── .github/           # GitHub workflows and templates
-├── docs/              # Documentation
-└── ...config files
+├── package.json
+├── vite.config.js     # Vite configuration
+└── README.md
 ```
 
 ## 📏 Coding Standards
