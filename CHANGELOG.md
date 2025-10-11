@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Initial project setup with React 19 and Vite 7
 - Modern React development environment with HMR
 - Real-time markdown editor with syntax highlighting
@@ -24,18 +25,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Testing setup with Jest and React Testing Library
 
 ### Changed
+
 - N/A (initial release)
 
 ### Deprecated
+
 - N/A (initial release)
 
 ### Removed
+
 - N/A (initial release)
 
 ### Fixed
+
 - N/A (initial release)
 
 ### Security
+
 - Input sanitization for markdown content
 - XSS protection for rendered diagrams
 - Secure API communication with CORS handling
@@ -44,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-01-04
 
 ### Added
+
 - Initial release of RenderMD Frontend
 - React 19 with latest features and optimizations
 - Vite 7 for lightning-fast development
@@ -62,19 +69,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### [Version] - YYYY-MM-DD
 
 #### Added
+
 - New features and components
 
 #### Changed
+
 - Changes in existing functionality
 
 #### Deprecated
+
 - Soon-to-be removed features
 
 #### Removed
+
 - Removed features and components
 
 #### Fixed
+
 - Bug fixes and improvements
 
 #### Security
+
 - Security improvements and patches
