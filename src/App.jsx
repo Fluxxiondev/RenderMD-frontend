@@ -1,11 +1,7 @@
-import { Button } from "./components/ui/button"
-
+import { Button } from './components/ui/button';
 
 function App() {
-
-  return (
-  <Button variant="destructive">Button</Button>
-  )
+  return <Button variant="destructive">Button</Button>;
 }
 
-export default App
+export default App;
