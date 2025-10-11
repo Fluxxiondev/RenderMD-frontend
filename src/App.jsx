@@ -8,7 +8,7 @@ function App() {
     <>
       <ThemeProvider>
         <Header />
-        <main className='p-8'>
+        <main className="p-8">
           <Button type="button" variant="destructive">
             Button
           </Button>

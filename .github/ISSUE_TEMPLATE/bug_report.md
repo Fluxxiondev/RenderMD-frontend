@@ -4,7 +4,6 @@ about: Create a report to help us improve the frontend
 title: '[BUG] '
 labels: 'bug'
 assignees: ''
-
 ---
 
 **Describe the bug**
@@ -12,6 +11,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '...'
 3. Enter '...' in the input field
@@ -30,6 +30,7 @@ If applicable, add screenshots to help explain your problem.
 If the bug involves animations or interactions, please include a screen recording.
 
 **Browser and Device Information:**
+
 - Browser: [e.g. Chrome, Firefox, Safari]
 - Browser Version: [e.g. 96.0.4664.110]
 - OS: [e.g. Windows 10, macOS 12.1, Ubuntu 20.04]
@@ -37,23 +38,27 @@ If the bug involves animations or interactions, please include a screen recordin
 - Screen Resolution: [e.g. 1920x1080, 375x812]
 
 **Frontend Environment:**
+
 - React Version: [e.g. 19.1.1]
 - Vite Version: [e.g. 7.1.7]
 - Node.js Version: [e.g. 18.17.0]
 
 **Console Errors**
 If applicable, paste any console errors here:
+
 ```javascript
 // Console errors go here
 ```
 
 **Network Errors**
 If applicable, include any network request failures:
+
 ```
 // Network errors go here
 ```
 
 **Component/Page Affected**
+
 - [ ] Home page
 - [ ] Editor component
 - [ ] Preview component
@@ -64,18 +69,21 @@ If applicable, include any network request failures:
 
 **User Actions Leading to Bug**
 Describe the sequence of actions that led to the bug:
+
 1. First action
 2. Second action
 3. etc.
 
 **Data/Input That Caused the Issue**
 If applicable, provide the markdown content or input that caused the issue:
+
 ```markdown
 # Your markdown content here
 ```
 
 **Additional context**
 Add any other context about the problem here. Include:
+
 - Does this happen consistently or intermittently?
 - Have you tried refreshing the page?
 - Does this happen in incognito/private mode?
