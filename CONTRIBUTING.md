@@ -76,6 +76,7 @@ This project and everyone participating in it is governed by our [Code of Conduc
 We have several types of contributions you can make:
 
 #### 🌟 Good First Issues
+
 Perfect for newcomers! Look for issues labeled `good first issue`.
 
 #### 🎯 Areas We Need Help With
@@ -149,18 +150,21 @@ import PropTypes from 'prop-types';
 import { useDiagram } from '../hooks/useDiagram';
 import './DiagramEditor.css';
 
-const DiagramEditor = ({ 
-  initialContent = '', 
-  onContentChange, 
-  className = '' 
+const DiagramEditor = ({
+  initialContent = '',
+  onContentChange,
+  className = '',
 }) => {
   const [content, setContent] = useState(initialContent);
   const { renderDiagram, isLoading, error } = useDiagram();
 
-  const handleContentChange = useCallback((newContent) => {
-    setContent(newContent);
-    onContentChange?.(newContent);
-  }, [onContentChange]);
+  const handleContentChange = useCallback(
+    newContent => {
+      setContent(newContent);
+      onContentChange?.(newContent);
+    },
+    [onContentChange]
+  );
 
   const renderedDiagram = useMemo(() => {
     return renderDiagram(content);
@@ -174,16 +178,14 @@ const DiagramEditor = ({
     <div className={`diagram-editor ${className}`}>
       <textarea
         value={content}
-        onChange={(e) => handleContentChange(e.target.value)}
+        onChange={e => handleContentChange(e.target.value)}
         placeholder="Enter your markdown here..."
         className="editor-textarea"
       />
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <div className="diagram-preview">
-          {renderedDiagram}
-        </div>
+        <div className="diagram-preview">{renderedDiagram}</div>
       )}
     </div>
   );
@@ -314,6 +316,7 @@ Changes
 ### Before Submitting
 
 1. **Update your fork**:
+
    ```bash
    git checkout main
    git pull upstream main
@@ -321,6 +324,7 @@ Changes
    ```
 
 2. **Create a feature branch**:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -328,6 +332,7 @@ Changes
 3. **Make your changes** following our coding standards
 
 4. **Test your changes**:
+
    ```bash
    npm test
    npm run lint
@@ -352,9 +357,11 @@ Changes
 
 ```markdown
 ## Description
+
 Brief description of changes and motivation
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] UI/UX improvement
@@ -363,9 +370,11 @@ Brief description of changes and motivation
 - [ ] Breaking change
 
 ## Screenshots
+
 Include screenshots for UI changes
 
 ## Testing
+
 - [ ] Unit tests pass
 - [ ] Integration tests pass
 - [ ] Manual testing completed
@@ -373,17 +382,20 @@ Include screenshots for UI changes
 - [ ] Mobile testing completed
 
 ## Performance Impact
+
 - [ ] No performance impact
 - [ ] Improves performance
 - [ ] May impact performance (explain below)
 
 ## Browser Testing
+
 - [ ] Chrome
 - [ ] Firefox
 - [ ] Safari
 - [ ] Edge
 
 ## Checklist
+
 - [ ] Code follows style guidelines
 - [ ] Self-review completed
 - [ ] Comments added for complex code
@@ -439,10 +451,10 @@ describe('DiagramEditor', () => {
   it('calls onContentChange when content changes', () => {
     const handleContentChange = vi.fn();
     render(<DiagramEditor onContentChange={handleContentChange} />);
-    
+
     const textarea = screen.getByRole('textbox');
     fireEvent.change(textarea, { target: { value: 'new content' } });
-    
+
     expect(handleContentChange).toHaveBeenCalledWith('new content');
   });
 

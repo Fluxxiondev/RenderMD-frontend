@@ -32,17 +32,20 @@
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Fluxxiondev/RenderMD-frontend.git
    cd RenderMD-frontend
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -158,12 +161,15 @@ We use ESLint and Prettier for consistent code formatting:
 // ✅ Good
 const DiagramComponent = ({ content, type, onUpdate }) => {
   const [isLoading, setIsLoading] = useState(false);
-  
-  const handleContentChange = useCallback((newContent) => {
-    setIsLoading(true);
-    onUpdate(newContent);
-    setIsLoading(false);
-  }, [onUpdate]);
+
+  const handleContentChange = useCallback(
+    newContent => {
+      setIsLoading(true);
+      onUpdate(newContent);
+      setIsLoading(false);
+    },
+    [onUpdate]
+  );
 
   return (
     <div className="diagram-container">
@@ -172,7 +178,6 @@ const DiagramComponent = ({ content, type, onUpdate }) => {
   );
 };
 ```
-
 
 ## 🤝 Contributing
 
@@ -210,6 +215,7 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) for detailed informat
 ### Performance Metrics
 
 We aim for:
+
 - **Lighthouse Score**: 90+ across all categories
 - **First Contentful Paint**: < 1.5s
 - **Time to Interactive**: < 3s
@@ -218,7 +224,7 @@ We aim for:
 ## 🌍 Browser Support
 
 - **Chrome**: Latest 2 versions
-- **Firefox**: Latest 2 versions  
+- **Firefox**: Latest 2 versions
 - **Safari**: Latest 2 versions
 - **Edge**: Latest 2 versions
 - **Mobile**: iOS Safari, Chrome Mobile

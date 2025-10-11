@@ -4,11 +4,11 @@ about: Suggest improvements or additions to documentation
 title: '[DOCS] '
 labels: 'documentation'
 assignees: ''
-
 ---
 
 **Documentation Section**
 Which part of the documentation needs improvement?
+
 - [ ] README.md
 - [ ] CONTRIBUTING.md
 - [ ] Component documentation
@@ -27,6 +27,7 @@ What should be added, changed, or clarified?
 
 **Target Audience**
 Who would benefit from this documentation improvement?
+
 - [ ] New contributors
 - [ ] Experienced developers
 - [ ] End users
@@ -35,6 +36,7 @@ Who would benefit from this documentation improvement?
 
 **Content Type**
 What type of documentation is needed?
+
 - [ ] Written tutorial/guide
 - [ ] Code examples
 - [ ] API reference
@@ -45,11 +47,13 @@ What type of documentation is needed?
 - [ ] Troubleshooting guide
 
 **Priority**
+
 - [ ] High - Critical for onboarding/usage
 - [ ] Medium - Would help many users
 - [ ] Low - Nice to have addition
 
 **Additional Context**
+
 - Links to related documentation
 - Examples from other projects
 - Specific questions users have asked

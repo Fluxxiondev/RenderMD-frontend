@@ -19,9 +19,11 @@ Fixes # (issue)
 ## Screenshots
 
 ### Before
+
 <!-- Add screenshots showing the current state -->
 
 ### After
+
 <!-- Add screenshots showing your changes -->
 
 ## How Has This Been Tested?
@@ -36,6 +38,7 @@ Please describe the tests that you ran to verify your changes:
 - [ ] Accessibility testing completed
 
 **Test Configuration**:
+
 - Node.js version:
 - Browser(s):
 - Device(s):
@@ -44,12 +47,15 @@ Please describe the tests that you ran to verify your changes:
 ## Component/Feature Changes
 
 ### New Components
+
 - `ComponentName` - Description of what it does
 
 ### Modified Components
+
 - `ExistingComponent` - What changed and why
 
 ### New Hooks/Services
+
 - `useCustomHook` - Purpose and functionality
 - `apiService` - New API integration
 
@@ -64,6 +70,7 @@ Please describe the tests that you ran to verify your changes:
 ## Browser Compatibility
 
 Tested on:
+
 - [ ] Chrome (latest)
 - [ ] Firefox (latest)
 - [ ] Safari (latest)
@@ -108,17 +115,21 @@ Tested on:
 Add any additional notes, concerns, or questions for reviewers.
 
 ### Dependencies Added/Updated
+
 <!-- List any new dependencies or version updates -->
 
 ### Breaking Changes
+
 <!-- Describe any breaking changes and migration path -->
 
 ### Future Considerations
+
 <!-- Any follow-up work or considerations for future iterations -->
 
 ## Reviewer Notes
 
 @reviewers Please pay special attention to:
+
 - [ ] Component architecture and reusability
 - [ ] Performance implications
 - [ ] Accessibility compliance
