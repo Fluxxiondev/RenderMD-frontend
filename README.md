@@ -21,6 +21,9 @@
 - 🎯 **Multiple Diagram Types**: Support for flowcharts, sequence diagrams, and more
 - 💾 **Export Options**: Save diagrams in multiple formats
 - 🌙 **Dark Mode**: Toggle between light and dark themes
+- 🔐 **User Authentication**: Secure registration and login system
+- 📝 **Form Validation**: Real-time validation with error handling
+- ✨ **Smooth Animations**: Framer Motion powered interactions
 
 ## 🚀 Quick Start
 
@@ -58,6 +61,13 @@
 RenderMD-frontend/
 ├── public/             # Static assets
 ├── src/
+│   ├── components/     # Reusable UI components
+│   │   └── ui/        # Base UI components (Button, Input, etc.)
+│   ├── pages/         # Application pages
+│   │   └── auth/      # Authentication pages
+│   │       ├── login.jsx     # User login page
+│   │       └── register.jsx  # User registration page
+│   ├── lib/           # Utility libraries
 │   ├── App.jsx        # Main App component
 │   └── main.jsx       # Entry point
 ├── .github/           # GitHub workflows and templates
@@ -91,10 +101,14 @@ VITE_API_VERSION=v1
 VITE_APP_TITLE=RenderMD
 VITE_APP_DESCRIPTION=Convert Markdown to Interactive Diagrams
 
+# Authentication Settings
+VITE_JWT_STORAGE_KEY=rendermd_token
+
 # Feature Flags
 VITE_ENABLE_DARK_MODE=true
 VITE_ENABLE_EXPORT=true
 VITE_ENABLE_COLLABORATION=false
+VITE_ENABLE_AUTH=true
 ```
 
 ### Vite Configuration
@@ -115,6 +129,13 @@ The project uses Vite with React and includes:
 - **Toolbar**: Action buttons and settings
 - **ExportDialog**: Multiple export format options
 - **ThemeToggle**: Light/dark mode switcher
+
+### Authentication Components
+
+- **RegisterPage**: User registration with form validation
+- **LoginPage**: User authentication with JWT tokens
+- **Input Component**: Reusable form input with error states
+- **Button Component**: Consistent button styling across forms
 
 ### Diagram Types Supported
 
